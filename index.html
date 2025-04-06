@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eddy Currents Explained</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax for equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Eddy Currents: Explained Visually</h1>
+  </header>
+
+  <section id="intro">
+    <h2>What Are Eddy Currents?</h2>
+    <p>
+      Eddy currents are circular electric currents induced within conductors by a changing magnetic field. They oppose the motion of the source and can produce heat or braking force.
+    </p>
+    <img src="https://www.sciencefacts.net/wp-content/uploads/2020/06/Eddy-Current-Diagram.jpg" 
+         alt="Eddy current diagram" width="100%">
+    <figcaption style="text-align: center; font-style: italic;">
+      Source: sciencefacts.net – Visualization of eddy currents in a conductor.
+    </figcaption>
+  </section>
+
+  <section id="equation">
+    <h2>The Physics Behind It</h2>
+    <p>
+      According to Faraday’s Law, a changing magnetic field induces an electromotive force:
+    </p>
+    <p>
+      $$ \mathcal{E} = -\frac{d\Phi_B}{dt} $$
+    </p>
+    <p>
+      And per Lenz’s Law, the induced current opposes the magnetic change that created it.
+    </p>
+  </section>
+
+  <section id="applications">
+    <h2>Real-World Applications</h2>
+    <ul>
+      <li><strong>Non-destructive testing:</strong> Used to detect flaws in metal structures without damaging them.</li>
+      <li><strong>Magnetic braking:</strong> Found in roller coasters, high-speed trains, and some gym equipment.</li>
+      <li><strong>Induction heating:</strong> Used in metalworking and induction stoves.</li>
+    </ul>
+    <img src="https://www.azom.com/images/Article_Images/ImageForArticle_18550(1).jpg" 
+         alt="Eddy current testing equipment" width="100%">
+    <figcaption style="text-align: center; font-style: italic;">
+      Source: azom.com – Eddy current testing equipment in industrial applications.
+    </figcaption>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Eddy_current_brake_diagram.svg"
+         alt="Eddy current brake diagram" width="100%">
+    <figcaption style="text-align: center; font-style: italic;">
+      Source: Wikipedia – Working of an eddy current brake system.
+    </figcaption>
+  </section>
+
+  <section id="interactive">
+    <h2>Interactive Canvas (Optional)</h2>
+    <p>Drag the red magnet to see the eddy currents in motion:</p>
+    <canvas id="eddyCanvas" width="600" height="400"></canvas>
+  </section>
+
+  <footer>
+    <p>© 2025 Eddy Currents Presentation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
